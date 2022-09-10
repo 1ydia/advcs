@@ -1,5 +1,7 @@
+package ShapeP;
+
 public class Circle implements Shape {
-    double radius;
+    public double radius;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -10,12 +12,5 @@ public class Circle implements Shape {
     }
     public double perimeter() {
         return 2 * Math.PI * radius;
-    }
-
-    public double radius() {
-        return radius;
-    }
-    public void radius(double radius) {
-        this.radius = radius;
     }
 }

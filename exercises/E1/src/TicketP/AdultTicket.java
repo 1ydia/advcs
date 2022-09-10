@@ -1,3 +1,5 @@
+package TicketP;
+
 public class AdultTicket extends Ticket {
     public static double fee = 59.99;
 

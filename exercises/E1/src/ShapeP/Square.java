@@ -1,5 +1,7 @@
+package ShapeP;
+
 public class Square implements Shape {
-    double sideLength;
+    public double sideLength;
 
     public Square(double sideLength) {
         this.sideLength = sideLength;
@@ -10,12 +12,5 @@ public class Square implements Shape {
     }
     public double perimeter() {
         return sideLength * 4;
-    }
-
-    public double sideLength() {
-        return sideLength;
-    }
-    public void sideLength(double sideLength) {
-        this.sideLength = sideLength;
     }
 }

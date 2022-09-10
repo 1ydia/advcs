@@ -1,3 +1,5 @@
+package VehicleP;
+
 import java.awt.Color;
 
 public class Car implements Vehicle {

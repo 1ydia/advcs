@@ -1,3 +1,5 @@
+package TicketP;
+
 public class ChildTicket extends Ticket {
     public static double fee = 29.99;
 

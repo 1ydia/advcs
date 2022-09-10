@@ -7,6 +7,8 @@ If students get 20% off on saturdays, I can then just overload the required meth
 but if no one else gets anything special but different prices, why bother?
 */
 
+package TicketP;
+
 public class Ticket {
     public static double baseCost = 0;
     boolean isAdvance;
