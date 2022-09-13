@@ -7,7 +7,7 @@ public class Employee {
     Date dateHired;
     boolean active = false;
 
-    Employee(String employeeID, Date dateHired) {
+    public Employee(String employeeID, Date dateHired) {
         this.employeeID = employeeID;
         this.dateHired = dateHired;
     }
@@ -16,10 +16,10 @@ public class Employee {
         return 0;
     }
 
-    public boolean active() {
+    public boolean isActive() {
         return active;
     }
-    public void active(boolean active) {
+    public void setActive(boolean active) {
         this.active = active;
     }
 }

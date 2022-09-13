@@ -3,7 +3,7 @@ package TicketP;
 public class ChildTicket extends Ticket {
     public static double fee = 29.99;
 
-    ChildTicket(boolean isAdvance) {
+    public ChildTicket(boolean isAdvance) {
         super(isAdvance);
     }
 

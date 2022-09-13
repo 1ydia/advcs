@@ -13,7 +13,7 @@ public class Ticket {
     public static double baseCost = 0;
     boolean isAdvance;
 
-    Ticket(boolean isAdvance) {
+    public Ticket(boolean isAdvance) {
         this.isAdvance = isAdvance;
     }
 
