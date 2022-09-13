@@ -6,7 +6,7 @@ public class Worker extends Employee {
     int hoursDue;
     double wage;
 
-    Worker(String employeeID, Date dateHired, double wage) {
+    public Worker(String employeeID, Date dateHired, double wage) {
         super(employeeID, dateHired);
         this.wage = wage;
     }

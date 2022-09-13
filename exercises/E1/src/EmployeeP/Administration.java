@@ -6,7 +6,7 @@ public class Administration extends Employee {
     int paychecksDue;
     double paycheck;
 
-    Administration(String employeeID, Date dateHired, double paycheck) {
+    public Administration(String employeeID, Date dateHired, double paycheck) {
         super(employeeID, dateHired);
         this.paycheck = paycheck;
     }
