@@ -3,7 +3,7 @@ package Scrabble;
 import java.util.HashMap;
 
 public class MaxScrabbleScore extends TextFileAccessor {
-    int bestScore;
+    int bestScore = 0;
     String bestLine;
 
     HashMap<Character, Integer> pointValue = new HashMap<Character, Integer>() {{
@@ -35,15 +35,20 @@ public class MaxScrabbleScore extends TextFileAccessor {
         put('z', 10);
     }};
 
-
-    private void processLine(String line){
+    private void processLine(String line) {
         int i = 0;
+        int score = 0;
         for (char c : line.toCharArray()) {
+            score += pointValue.get(c);
+        }
+        if (score > this.bestScore) {
 
+            this.bestScore = score;
+            this.bestLine = line;
         }
     }
 
     public String getReportStr(){
-        return "";
+        return "SCREAM Max scrabble score: %d for this line: %s".formatted(bestScore, bestLine);
     }
 }
